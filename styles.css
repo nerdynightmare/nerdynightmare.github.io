@@ -13,7 +13,7 @@ html,body{height:100%;margin:0;font-family:Georgia, 'Times New Roman', Times, se
 body{background: radial-gradient(circle at 10% 10%, #0b0510 0%, var(--bg) 40%, #020203 100%);color:var(--muted);-webkit-font-smoothing:antialiased;display:flex;flex-direction:column;min-height:100vh;}
 
 body{
-  background-image: url(images/bg.png.png);  
+  background-image: url(images/VRChat_2025-08-17_12-40-08.774_3840x2160.png);  
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
