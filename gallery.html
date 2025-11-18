@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gallery — Nerdy Nightmare</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">Nerdy <span class="accent">Nightmare</span></div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="nsfw.html">NSFW Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="gallery-section">
+      <h2 class="section-title">Gallery</h2>
+      <p class="muted">A curated selection of VR modeling work. Click any image to open the slider.</p>
+
+      <div class="gallery-grid" id="gallery-grid">
+        <button class="thumb" data-index="1" aria-label="Open image 1"><img src="images/img1.png" alt="Thumb 1"></button>
+        <button class="thumb" data-index="2" aria-label="Open image 2"><img src="images/img2.png" alt="Thumb 2"></button>
+        <button class="thumb" data-index="3" aria-label="Open image 3"><img src="images/img3.png" alt="Thumb 3"></button>
+        <button class="thumb" data-index="4" aria-label="Open image 4"><img src="images/img4.png" alt="Thumb 4"></button>
+        <button class="thumb" data-index="5" aria-label="Open image 5"><img src="images/img5.png" alt="Thumb 5"></button>
+      </div>
+
+      <!-- Slider modal -->
+      <div class="modal" id="gallery-modal" aria-hidden="true">
+        <div class="modal-inner">
+          <button class="modal-close" id="modal-close" aria-label="Close">✕</button>
+          <div class="modal-slider" id="modal-slider">
+          <figure class="slide"><img src="images/img1.png" alt="Portfolio image 1" /></figure>
+          <figure class="slide"><img src="images/img2.png" alt="Portfolio image 2" /></figure>
+          <figure class="slide"><img src="images/img3.png" alt="Portfolio image 3" /></figure>
+          <figure class="slide"><img src="images/img4.png" alt="Portfolio image 4" /></figure>
+          <figure class="slide"><img src="images/img5.png" alt="Portfolio image 5" /></figure>
+
+          </div>
+          <button class="nav prev" data-target="modal-slider" aria-label="Previous slide">‹</button>
+          <button class="nav next" data-target="modal-slider" aria-label="Next slide">›</button>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© 2025 Nerdy Nightmare</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

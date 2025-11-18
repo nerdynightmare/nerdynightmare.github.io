@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NSFW Gallery — Nerdy Nightmare (18+)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">Nerdy <span class="accent">Nightmare</span></div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="nsfw.html">NSFW Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="gallery-section">
+      <h2 class="section-title">NSFW Gallery — Age Restricted</h2>
+      <p class="muted">This gallery contains mature-themed VR imagery. You must confirm you are 18 or older to view.</p>
+
+      <div class="age-gate" id="age-gate">
+        <button class="btn" id="confirm-age">I am 18 or older — Enter NSFW Gallery</button>
+      </div>
+
+      <div class="slideshow-frame hidden" id="nsfw-frame" aria-roledescription="gallery">
+        <div class="slideshow" id="nsfw-slider" aria-live="polite">
+          <figure class="slide"><img src="images/img1.png" alt="Portfolio image 1" /></figure>
+          <figure class="slide"><img src="images/img2.png" alt="Portfolio image 2" /></figure>
+          <figure class="slide"><img src="images/img3.png" alt="Portfolio image 3" /></figure>
+          <figure class="slide"><img src="images/img4.png" alt="Portfolio image 4" /></figure>
+          <figure class="slide"><img src="images/img5.png" alt="Portfolio image 5" /></figure>
+          <figure class="slide nsfw"><img src="images/img6.png" alt="Portfolio image 6" /></figure>
+          <figure class="slide nsfw"><img src="images/img7.png" alt="Portfolio image 7" /></figure>
+          <figure class="slide nsfw"><img src="images/img8.png" alt="Portfolio image 8" /></figure>
+
+        </div>
+        <button class="nav prev" data-target="nsfw-slider" aria-label="Previous slide">‹</button>
+        <button class="nav next" data-target="nsfw-slider" aria-label="Next slide">›</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© 2025 Nerdy Nightmare</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
