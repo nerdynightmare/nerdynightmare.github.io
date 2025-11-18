@@ -12,6 +12,22 @@
 html,body{height:100%;margin:0;font-family:Georgia, 'Times New Roman', Times, serif;}
 body{background: radial-gradient(circle at 10% 10%, #0b0510 0%, var(--bg) 40%, #020203 100%);color:var(--muted);-webkit-font-smoothing:antialiased;display:flex;flex-direction:column;min-height:100vh;}
 
+body{
+  background-image: url(https://postimg.cc/vgp9SpSg);  
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  /* keep your gothic gradient blended on top */
+  background-color: var(--bg);
+  color:var(--muted);
+  -webkit-font-smoothing:antialiased;
+  
+  display:flex;
+  flex-direction:column;
+  min-height:100vh;
+}
 /* Header */
 .site-header{display:flex;justify-content:space-between;align-items:center;padding:18px 28px;border-bottom:1px solid rgba(255,255,255,0.02);position:sticky;top:0;background:linear-gradient(180deg, rgba(0,0,0,0.3), transparent);z-index:10}
 .logo{font-weight:700;font-size:22px;letter-spacing:1px;color:#efe6ea}
