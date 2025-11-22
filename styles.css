@@ -2,33 +2,33 @@
 :root{
   --bg:#050203;
   --panel:#0b0708;
-  --accent:#9b1b2b; /* deep red */
-  --accent2:#6b2f6b; /* purple */
+  --accent:#9b1b2b;
+  --accent2:#6b2f6b;
   --muted:#b9aeb3;
   --glass: rgba(255,255,255,0.03);
 }
 
 *{box-sizing:border-box}
-html,body{height:100%;margin:0;font-family:Georgia, 'Times New Roman', Times, serif;}
-body{background: radial-gradient(circle at 10% 10%, #0b0510 0%, var(--bg) 40%, #020203 100%);color:var(--muted);-webkit-font-smoothing:antialiased;display:flex;flex-direction:column;min-height:100vh;}
-
-body{
+html,body{
   height:100%;
   margin:0;
   font-family:Georgia, 'Times New Roman', Times, serif;
+}
 
-  /* Gothic gradient */
+/* --- FIXED + MERGED BACKGROUND --- */
+body{
+  /* gradient + image stacked together */
   background:
     radial-gradient(circle at 10% 10%, #0b0510 0%, var(--bg) 40%, #020203 100%),
-    url(images/VRChat_2025-08-17_12-40-08.774_3840x2160.png.png);
-  
+    url("images/VRChat_2025-08-17_12-40-08.774_3840x2160.png");
+
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
 
-  color:var(--muted);
-  -webkit-font-smoothing:antialiased;
+  color: var(--muted);
+  -webkit-font-smoothing: antialiased;
 
   display:flex;
   flex-direction:column;
